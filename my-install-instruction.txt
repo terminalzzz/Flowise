@@ -1,0 +1,12 @@
+#My installation instruction
+
+#Start
+#Go to docker folder at the root of the project
+#Copy .env.example file, paste it into the same location, and rename to .env
+docker-compose up -d
+
+#Shutdown
+docker-compose stop
+
+#Upgrade
+docker pull flowiseai/flowise
