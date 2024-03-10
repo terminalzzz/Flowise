@@ -1,5 +1,5 @@
 #My installation instruction
-
+https://flowiseai.com/
 #Start
 #Go to docker folder at the root of the project
 #Copy .env.example file, paste it into the same location, and rename to .env
@@ -10,3 +10,6 @@ docker-compose stop
 
 #Upgrade
 docker pull flowiseai/flowise
+
+#Ollama UI
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
